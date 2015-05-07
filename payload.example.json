@@ -1,0 +1,16 @@
+{
+  "script": "sleep 6666; echo 'custom script';",
+  "repository": {
+    "url": "https://stash.your-company.com/projects/FINALCI/repos/travis-core",
+    "slug": "finalci/travis-core",
+    "name": "travis-core",
+    "owner_name": "finalci"
+  },
+  "commits": [{
+    "sha": "ad8242fdede5c70fb11685eb33cee3c512f1cb36",
+    "message": "nepovinnny argument...",
+    "date": "2014-10-27T02:32:37Z"
+  }],
+
+  "ref": "refs/heads/master"
+}
