@@ -1,3 +1,13 @@
 development:
   stash:
     source_host: stash.your-company.com
+    source_port: 443
+    source_protocol: https
+
+    git_source_protocol: ssh
+    git_source_port: 22
+
+    #connection:
+    #  # Low level config, used by Faraday, see http://www.rubydoc.info/gems/faraday/0.9.1/Faraday.new
+    #  ssl:
+    #    verify: false
