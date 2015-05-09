@@ -1,5 +1,8 @@
 {
-  "script": "sleep 6666; echo 'custom script';",
+  ".travis.yml": {
+    "language": "bash",
+    "script": "sleep 60; echo 'Ahoj!'"
+  },
   "repository": {
     "url": "https://stash.your-company.com/projects/FINALCI/repos/travis-core",
     "slug": "finalci/travis-core",
