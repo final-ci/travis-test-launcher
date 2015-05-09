@@ -97,6 +97,20 @@ repository = Repository.create!(
   url: payload['repository']['url'],
   private: false) unless repository
 
+
+unless repository.settings.ssh_key
+  repository.settings.ssh_key = {
+    descriptin: 'auto added ssh key',
+    value: File.read('/home/travis/.ssh/travis')
+  }
+  unless repository.settings.vaild?
+    STDERR.put "Cannot add repository key!"
+    exit 2
+  end
+  repository.settings.save
+end
+
+
 queue_payload[:payload]['repository']['repository_id'] = repository.id
 
 #run the service
