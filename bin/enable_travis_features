@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'travis'
+
+Travis::Features.enable_for_all(:force_script)
+Travis::Features.enable_for_all(:multi_os)
+Travis::Features.enable_for_all(:fix_resolv_conf)
+
