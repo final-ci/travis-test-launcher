@@ -160,6 +160,9 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    stash-client (0.1.0)
+      addressable
+      faraday
     thor (0.14.6)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -185,6 +188,7 @@ DEPENDENCIES
   connection_pool
   diff-lcs
   pg
+  stash-client
   travis-config (~> 0.1.0)
   travis-core!
   travis-sidekiqs!

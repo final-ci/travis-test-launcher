@@ -16,4 +16,6 @@ gem 'diff-lcs'
 
 gem 'pg'
 
+gem 'stash-client'
+
 # gem "rails"
